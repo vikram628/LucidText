@@ -1,9 +1,8 @@
 body {
-  margin: 0;
-  background-image: url('../images/mainpic.jpg');
+  margin: 0;background-image: url('../images/mainpic.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 1s;
+  /* transition: background-image 1s; */
   padding-bottom: 100px;
 }
 
