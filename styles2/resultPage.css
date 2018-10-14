@@ -13,7 +13,7 @@ body {
 }
 #blockText{
   font-size: 35px;
-  font-family:'Dancing Script', cursive;
+  font-family:'Do Hyeon';
   color: rgba(8,19,17,.77);
   padding-left: 30px;
 }
@@ -23,8 +23,8 @@ body {
   left: 0px;
   flex-wrap: wrap;
   width: 40%;
-  font-family:'Dancing Script', cursive;
-  color: rgba(8,19,17,.55);
+  font-family:'Lobster', bold;
+  color: rgba(8,13, 108);
   font-size: 40px;
   margin-left: 85px;
 
@@ -99,7 +99,7 @@ flex-wrap: nowrap;
   margin-left: 50px;
   margin-bottom: 27px;
   font-size: 35px;
-  font-family:'Dancing Script', cursive;
+  font-family:'Do Hyeon';
   color: rgba(8,19,17,.77);
 }
 #list{
