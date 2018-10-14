@@ -12,8 +12,9 @@ body {
   flex-direction: row;
 }
 #description {
-  padding-top: 120px;
-  padding-right: 375px;
+  padding-top: 50px;
+  padding-right: 60px;
+  padding-left: 50px;
   font-size: 25px;
   font-family:'Do Hyeon', bold;
   padding-bottom: 20px;
@@ -31,7 +32,7 @@ label {
     left: 0px;
     flex-wrap: wrap;
     font-family:'Lobster', bold;
-    color: rgba(8,13,108);
+    color: rgba(8, 13, 108);
     font-size: 40px;
     margin-left: 85px;
     flex-shrink: 0;
@@ -56,7 +57,7 @@ label {
 }
 
 #text_entry {
-  height: 550px;
+  height: 400px;
   width: 60%;
   display: flex;
   flex-direction: column;
