@@ -16,13 +16,13 @@ body {
   padding-right: 111px;
   padding-left: 62px;
   font-size: 25px;
-  font-family:'Dancing Script', cursive;
+  font-family:'Do Hyeon', bold;
   padding-bottom: 20px;
 }
 
 label {
   align-self: center;
-  font-family:'Dancing Script', cursive;
+  font-family:'Do Hyeon';
   font-size: 18px;
 }
 
@@ -31,8 +31,8 @@ label {
     position: relative;
     left: 0px;
     flex-wrap: wrap;
-    font-family:'Dancing Script', cursive;
-    color: rgba(8,19,17,.55);
+    font-family:'Lobster', bold;
+    color: rgba(8,13,108);
     font-size: 40px;
     margin-left: 85px;
     flex-shrink: 0;
@@ -87,6 +87,6 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   width: 200px;
-  font-family:'Dancing Script', cursive;
+  font-family:'Do Hyeon', cursive;
   font-size: 30px;
 }
