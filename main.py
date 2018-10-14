@@ -62,21 +62,25 @@ def getWordList(unfilteredText):
     return wordList
 def getHardWords(unfilteredText):
     wordList = unfilteredText.split()
+    s = set(wordList)
+    print ('Set Debuggin',s)
     hardWordList = []
-    for x in range (0,len(wordList)):
+    for x in s:
         # wordList[x] = wordList[x].replace(".","")
         # wordList[x] = wordList[x].replace(",","")
         # wordList[x] = wordList[x].replace("(","")
         # wordList[x] = wordList[x].replace(")","")
         # wordList[x] = wordList[x].replace(":","")
-        wordList[x] = re.sub(r"\W","", wordList[x])
-        if(get_difficulty(str(wordList[x])) < 100000):
+        x = re.sub(r"\W","",x)
+        if(get_difficulty(str(x)) < 100000):
+            print("hardwordfound",x)
             try:
-                content = wordList[x] + "<br> Definition: " + get_definition(wordList[x])
-                hardWordList.append({'content': content, 'word':wordList[x]})
+                content = x + "<br> Definition: " + get_definition(str(x))
+                hardWordList.append({'content': content, 'word':x})
             except:
                 print "No def"
-                print wordList[x]
+                print x
+    print("HARD WORD LIST",hardWordList)
     return hardWordList
 class WelcomePage(webapp2.RequestHandler):
     def get(self):
@@ -94,8 +98,6 @@ class WelcomePage(webapp2.RequestHandler):
         welcome_template = jinja_current_directory.get_template('templates/resultPage.html')
         #self.response.write(welcome_template.render(researchDic))
         self.response.write(welcome_template.render(populationDict))
-        wlist = ['helpful']
-        print('#param1',get_difficulty('about'))
         # wlist[0] = wlist[0] + "/n Definiton: " + get_definition(wlist[0])
         # print wlist[0]
 
