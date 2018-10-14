@@ -12,9 +12,8 @@ body {
   flex-direction: row;
 }
 #description {
-  padding-top: 64px;
-  padding-right: 111px;
-  padding-left: 62px;
+  padding-top: 120px;
+  padding-right: 375px;
   font-size: 25px;
   font-family:'Do Hyeon', bold;
   padding-bottom: 20px;
@@ -23,7 +22,7 @@ body {
 label {
   align-self: center;
   font-family:'Do Hyeon';
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #title {
